@@ -1,6 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+	"io/ioutil"
+
+	"github.com/bradleyjkemp/memviz"
+)
 
 // Node is a fundamental datastructure for a tree
 type Node struct {
@@ -74,7 +80,6 @@ func locate(node *Node, value int) *Node {
 }
 
 func successor(node *Node, value int) int {
-	fmt.Println("node ", node)
 	if value < node.value && node.left != nil {
 		return successor(node.left, value)
 	} else if value >= node.value && node.right != nil {
@@ -83,17 +88,9 @@ func successor(node *Node, value int) int {
 	return node.value
 }
 
-// 	    6
-//    /   \
-//   4     9
-//  / \   / \
-// 2   5 7  12
-///       \   \
-//0        8   14
-// \           /
-//  1         13
 func main() {
 	root := insert(nil, 6)
+	insert(root, 3)
 	insert(root, 4)
 	insert(root, 9)
 	insert(root, 7)
@@ -106,10 +103,18 @@ func main() {
 	insert(root, 13)
 	insert(root, 1)
 	printAscendingOrder(root)
+	buf := &bytes.Buffer{}
+	memviz.Map(buf, &root)
+	err := ioutil.WriteFile("tree-data.dot", buf.Bytes(), 0644)
+	if err != nil {
+		panic(err)
+	}
 
 	fmt.Println("finding successor")
 	fmt.Println("0 - ", findSuccessor(root, 0))
+	fmt.Println("1 - ", findSuccessor(root, 1))
 	fmt.Println("2 - ", findSuccessor(root, 2))
+	fmt.Println("3 - ", findSuccessor(root, 3))
 	fmt.Println("4 - ", findSuccessor(root, 4))
 	fmt.Println("5 - ", findSuccessor(root, 5))
 	fmt.Println("6 - ", findSuccessor(root, 6))

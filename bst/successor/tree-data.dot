@@ -1,0 +1,30 @@
+digraph structs {
+  node [shape=Mrecord];
+  5 [label="<name> Node |{<f0> value | 1} |{<f1> left | *main.Node(nil)} |{<f2> right | *main.Node(nil)}  "];
+  4 [label="<name> Node |{<f0> value | 0} |{<f1> left | *main.Node(nil)} |<f2> right "];
+  4:f2 -> 5:name;
+  3 [label="<name> Node |{<f0> value | 2} |<f1> left|{<f2> right | *main.Node(nil)}  "];
+  3:f1 -> 4:name;
+  7 [label="<name> Node |{<f0> value | 5} |{<f1> left | *main.Node(nil)} |{<f2> right | *main.Node(nil)}  "];
+  6 [label="<name> Node |{<f0> value | 4} |{<f1> left | *main.Node(nil)} |<f2> right "];
+  6:f2 -> 7:name;
+  2 [label="<name> Node |{<f0> value | 3} |<f1> left|<f2> right "];
+  2:f1 -> 3:name;
+  2:f2 -> 6:name;
+  10 [label="<name> Node |{<f0> value | 8} |{<f1> left | *main.Node(nil)} |{<f2> right | *main.Node(nil)}  "];
+  9 [label="<name> Node |{<f0> value | 7} |{<f1> left | *main.Node(nil)} |<f2> right "];
+  9:f2 -> 10:name;
+  13 [label="<name> Node |{<f0> value | 13} |{<f1> left | *main.Node(nil)} |{<f2> right | *main.Node(nil)}  "];
+  12 [label="<name> Node |{<f0> value | 14} |<f1> left|{<f2> right | *main.Node(nil)}  "];
+  12:f1 -> 13:name;
+  11 [label="<name> Node |{<f0> value | 12} |{<f1> left | *main.Node(nil)} |<f2> right "];
+  11:f2 -> 12:name;
+  8 [label="<name> Node |{<f0> value | 9} |<f1> left|<f2> right "];
+  8:f1 -> 9:name;
+  8:f2 -> 11:name;
+  1 [label="<name> Node |{<f0> value | 6} |<f1> left|<f2> right "];
+  1:f1 -> 2:name;
+  1:f2 -> 8:name;
+  14 [label="<name> *main.Node"];
+  14:name -> 1:name;
+}
