@@ -8,4 +8,4 @@
 
 ## Binary Search Trees
 
-[Sucessor](./bst/successor)
+- [Sucessor](./bst/successor)
