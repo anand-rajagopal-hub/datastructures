@@ -8,6 +8,7 @@
 - [Container With Most Water](./arrays/container-most-water)
 - [Atoi](./arrays/atoi)
 - [Most common word](./arrays/most-common-word)
+- [Reorder log files - WIP](./arrays/reorder-log-files)
 
 ## Binary Search Trees
 
