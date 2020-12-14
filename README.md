@@ -11,4 +11,8 @@
 
 ## Binary Search Trees
 
-- [Sucessor](./bst/successor)
+- [Successor](./bst/successor)
+
+## Sorting
+
+- [Merge Sort](./sorting/merge-sort)
