@@ -20,9 +20,7 @@ func reorderLogFiles(logs []string) []string {
 			}
 		}
 	}
-	fmt.Println(digitLogs)
 	sortedLogs := mergeSort(strLogs)
-	fmt.Println(strLogs)
 	for _, v := range digitLogs {
 		sortedLogs = append(sortedLogs, v)
 	}
@@ -51,9 +49,39 @@ func merge(i1, i2 []string) []string {
 	i := 0
 	j := 0
 	for i < len(i1) && j < len(i2) {
-		if i1[i] < i2[j] {
+		i1Runes := []rune(i1[i])
+		i2Runes := []rune(i2[j])
+
+		i1Str := ""
+		i2Str := ""
+		i1ID := ""
+		i2ID := ""
+		for k, v := range i1Runes {
+			if v == ' ' {
+				i1Str = string(i1Runes[k:])
+				i1ID = string(i1Runes[0:k])
+				break
+			}
+		}
+		for k, v := range i2Runes {
+			if v == ' ' {
+				i2Str = string(i2Runes[k:])
+				i2ID = string(i2Runes[0:k])
+				break
+			}
+		}
+		if i1Str < i2Str {
 			sortedArray = append(sortedArray, i1[i])
 			i++
+		} else if i1Str == i2Str {
+			if i1ID < i2ID {
+				sortedArray = append(sortedArray, i1[i])
+				i++
+			} else {
+				sortedArray = append(sortedArray, i2[j])
+				j++
+			}
+
 		} else {
 			sortedArray = append(sortedArray, i2[j])
 			j++
