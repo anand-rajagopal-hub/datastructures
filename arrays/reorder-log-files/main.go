@@ -21,33 +21,31 @@ func reorderLogFiles(logs []string) []string {
 		}
 	}
 	sortedLogs := mergeSort(strLogs)
-	for _, v := range digitLogs {
-		sortedLogs = append(sortedLogs, v)
-	}
-	return sortedLogs
+	return append(sortedLogs, digitLogs...)
 }
 
 func mergeSort(items []string) []string {
 	if len(items) == 0 {
 		return []string{}
 	}
-	return sort(items, 0, len(items))
+	return sort(items)
 }
 
-func sort(items []string, low, high int) []string {
+func sort(items []string) []string {
 	if len(items) == 1 {
 		return items
 	}
-	low = 0
-	high = len(items)
+	low := 0
+	mid := len(items) / 2
 
-	return merge(sort(items[low:high/2], low, high/2), sort(items[high/2:high], high/2, high))
+	return merge(sort(items[low:mid]), sort(items[mid:]))
 }
 
 func merge(i1, i2 []string) []string {
-	sortedArray := []string{}
+	sortedArray := make([]string, len(i1)+len(i2))
 	i := 0
 	j := 0
+	z := 0
 	for i < len(i1) && j < len(i2) {
 		i1Runes := []rune(i1[i])
 		i2Runes := []rune(i2[j])
@@ -71,31 +69,36 @@ func merge(i1, i2 []string) []string {
 			}
 		}
 		if i1Str < i2Str {
-			sortedArray = append(sortedArray, i1[i])
+			sortedArray[z] = i1[i]
 			i++
+			z++
 		} else if i1Str == i2Str {
 			if i1ID < i2ID {
-				sortedArray = append(sortedArray, i1[i])
+				sortedArray[z] = i1[i]
 				i++
+				z++
 			} else {
-				sortedArray = append(sortedArray, i2[j])
+				sortedArray[z] = i2[j]
+				z++
 				j++
 			}
-
 		} else {
-			sortedArray = append(sortedArray, i2[j])
+			sortedArray[z] = i2[j]
 			j++
+			z++
 		}
 	}
 
 	for i < len(i1) {
-		sortedArray = append(sortedArray, i1[i])
+		sortedArray[z] = i1[i]
 		i++
+		z++
 	}
 
 	for j < len(i2) {
-		sortedArray = append(sortedArray, i2[j])
+		sortedArray[z] = i2[j]
 		j++
+		z++
 	}
 	return sortedArray
 }
