@@ -68,20 +68,10 @@ func merge(i1, i2 []string) []string {
 				break
 			}
 		}
-		if i1Str < i2Str {
+		if i1Str < i2Str || (i1Str == i2Str && i1ID < i2ID) {
 			sortedArray[z] = i1[i]
 			i++
 			z++
-		} else if i1Str == i2Str {
-			if i1ID < i2ID {
-				sortedArray[z] = i1[i]
-				i++
-				z++
-			} else {
-				sortedArray[z] = i2[j]
-				z++
-				j++
-			}
 		} else {
 			sortedArray[z] = i2[j]
 			j++
