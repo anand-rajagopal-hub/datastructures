@@ -9,6 +9,7 @@
 - [Atoi](./arrays/atoi)
 - [Most common word](./arrays/most-common-word)
 - [Reorder log files](./arrays/reorder-log-files)
+- [Rain Water](./arrays/rain-water)
 
 ## Binary Search Trees
 
