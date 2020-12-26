@@ -15,6 +15,7 @@
 
 - [Add Two Number](./linked-lists/add-two-numbers)
 - [Deep Copy](./linked-lists/deep-copy)
+- [Reverse Linked List](./linked-lists/reverse)
 
 ## Binary Search Trees
 
