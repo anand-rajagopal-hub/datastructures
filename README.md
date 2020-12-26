@@ -20,6 +20,9 @@
 
 - [Successor](./bst/successor)
 
+## Searching
+- [kth largest](./searching/kthlargest)
 ## Sorting
 
 - [Merge Sort](./sorting/merge-sort)
+- [Heap Sort](./sorting/heap-sort)

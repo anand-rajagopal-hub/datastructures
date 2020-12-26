@@ -52,6 +52,7 @@ func merge(i1, i2 []int) []int {
 
 func main() {
 	fmt.Println(mergeSort([]int{7, 3, 9, 5, 4, 8, 0, 1}))
+	fmt.Println(mergeSort([]int{3, 2, 3, 1, 2, 4, 5, 5, 6, 7, 7, 8, 2, 3, 1, 1, 1, 10, 11, 5, 6, 2, 4, 7, 8, 5, 6}))
 }
 
 /*
