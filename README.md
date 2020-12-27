@@ -21,6 +21,10 @@
 
 - [Successor](./bst/successor)
 
+## Heap
+
+- [A simple max heap](./heap)
+
 ## Searching
 - [kth largest](./searching/kthlargest)
 ## Sorting

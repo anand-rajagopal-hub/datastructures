@@ -6,6 +6,8 @@ import (
 	"io/ioutil"
 )
 
+// Duplicate of Heap type from datastructures/heap. This is just to help with coding exercises
+
 type Heap struct {
 	items []int
 }
