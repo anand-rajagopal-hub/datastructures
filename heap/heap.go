@@ -6,10 +6,12 @@ import (
 	"io/ioutil"
 )
 
+// Heap data structure backed by an array
 type Heap struct {
 	items []int
 }
 
+// NewHeap initializes and returns a new Heap
 func NewHeap() *Heap {
 	return &Heap{
 		items: []int{0},
@@ -79,7 +81,8 @@ func (h *Heap) exchangeIndex(index int) int {
 	return -1
 }
 
-func (h *Heap) max() int {
+// Max returns the maximum item on the heap
+func (h *Heap) Max() int {
 	if len(h.items) == 1 {
 		return -1
 	}
@@ -121,8 +124,14 @@ func (h *Heap) visualize(m int) {
 	}
 }
 
-func (h *Heap) insertMany(numbers ...int) {
+// InsertMany is a convenience method to insert multiple numbers into heap
+func (h *Heap) InsertMany(numbers ...int) {
 	for _, k := range numbers {
 		h.insert(k)
 	}
+}
+
+// PrintItems prints the internal slice
+func (h *Heap) PrintItems() {
+	fmt.Println(h.items)
 }

@@ -38,26 +38,45 @@ func (h *Heap) sink(position int) {
 	if position > len(h.items)/2 {
 		return
 	}
-	leftPos := position * 2
-	rightPos := (position * 2) + 1
-	if leftPos >= len(h.items) && rightPos >= len(h.items) {
+
+	eIndex := h.exchangeIndex(position)
+	if eIndex == -1 {
 		return
 	}
-	t := h.items[position]
+	h.exchange(position, eIndex)
+	h.sink(eIndex)
+}
 
-	if rightPos < len(h.items) && h.items[rightPos] > h.items[leftPos] && t < h.items[rightPos] {
-		h.items[position] = h.items[rightPos]
-		h.items[rightPos] = t
-		h.sink(rightPos)
-	} else if rightPos < len(h.items) && h.items[leftPos] > h.items[rightPos] && t < h.items[leftPos] {
-		h.items[position] = h.items[leftPos]
-		h.items[leftPos] = t
-		h.sink(leftPos)
-	} else if t < h.items[leftPos] {
-		h.items[position] = h.items[leftPos]
-		h.items[leftPos] = t
-		h.sink(leftPos)
+func (h *Heap) exchange(index1, index2 int) {
+	currentItem := h.items[index1]
+	h.items[index1] = h.items[index2]
+	h.items[index2] = currentItem
+}
+
+func (h *Heap) exchangeIndex(index int) int {
+	lcIndex := index * 2
+	rcIndex := (index * 2) + 1
+	size := len(h.items)
+	currentItem := h.items[index]
+	if lcIndex >= size {
+		return -1
 	}
+
+	if rcIndex >= size {
+		if currentItem < h.items[lcIndex] {
+			return lcIndex
+		}
+		return -1
+	}
+
+	if h.items[rcIndex] > h.items[lcIndex] && currentItem < h.items[rcIndex] {
+		return rcIndex
+	}
+
+	if currentItem < h.items[lcIndex] {
+		return lcIndex
+	}
+	return -1
 }
 
 func (h *Heap) max() int {
