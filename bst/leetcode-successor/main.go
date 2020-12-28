@@ -1,11 +1,7 @@
 package main
 
 import (
-	"bytes"
 	"fmt"
-	"io/ioutil"
-
-	"github.com/bradleyjkemp/memviz"
 )
 
 // Node is a fundamental datastructure for a tree
@@ -47,25 +43,25 @@ func printAscendingOrder(node *Node) {
 
 }
 
-func succ(node *Node, value int) int {
-	return successor(node, value, node.value)
+func succ(node *Node, value int) *Node {
+	return successor(node, value, node)
 }
 
-func successor(node *Node, value, potentialSuccessor int) int {
+func successor(node *Node, value int, potentialSuccessor *Node) *Node {
 	if value == node.value && node.right == nil {
-		if potentialSuccessor <= node.value {
-			return -1
+		if potentialSuccessor.value <= node.value {
+			return nil
 		}
 		return potentialSuccessor
 	}
 	if value < node.value && node.left != nil {
-		potentialSuccessor = node.value
+		potentialSuccessor = node
 		return successor(node.left, value, potentialSuccessor)
 	}
 	if value >= node.value && node.right != nil {
 		return successor(node.right, value, potentialSuccessor)
 	}
-	return node.value
+	return node
 }
 
 func main() {
@@ -83,12 +79,6 @@ func main() {
 	insert(root, 13)
 	insert(root, 1)
 	printAscendingOrder(root)
-	buf := &bytes.Buffer{}
-	memviz.Map(buf, &root)
-	err := ioutil.WriteFile("tree-data.dot", buf.Bytes(), 0644)
-	if err != nil {
-		panic(err)
-	}
 
 	fmt.Println("finding successor - new way")
 	fmt.Println("0 - ", succ(root, 0))
