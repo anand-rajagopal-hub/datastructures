@@ -20,6 +20,7 @@
 ## Binary Search Trees
 
 - [Successor](./bst/successor)
+- [Validate a binary tree](./bst/validate)
 
 ## Heap
 
