@@ -1,4 +1,4 @@
-package type
+package path
 
 type Path struct {
 	visited map[int]int
