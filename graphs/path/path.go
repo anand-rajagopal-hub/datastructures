@@ -21,8 +21,8 @@ func (p *Path) Visit(vertex, from int) {
 	p.Paths[from] = true
 }
 
-// Visited returns if the vertex has been visited already
-func (p *Path) Visited(vertex int) (bool, int) {
+// VisitedAlready returns if the vertex has been visited already
+func (p *Path) VisitedAlready(vertex int) (bool, int) {
 	from, ok := p.Visited[vertex]
 	return ok, from
 }
