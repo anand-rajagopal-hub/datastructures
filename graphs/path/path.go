@@ -1,8 +1,8 @@
 package path
 
 type Path struct {
-	visited map[int]int
-	paths   map[int]bool
+	Visited map[int]int
+	Paths   map[int]bool
 }
 
 // NewPath makes a new path
