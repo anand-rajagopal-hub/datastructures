@@ -1,2 +1,3 @@
-github.com/anand-rajagopal-hub/datastructures/graphs/type v0.0.0-20201231153253-dba11b760751 h1:KZudRKvQ9j1AHBhJr6F4CHPv84cgpPd7evmM2lWAivY=
-github.com/anand-rajagopal-hub/datastructures/graphs/type v0.0.0-20201231153253-dba11b760751/go.mod h1:U6jPj9/xLUO6NruevGMG1umU0PyusZHwMFHh2JZXVCg=
+github.com/anand-rajagopal-hub/datastructures v0.0.2 h1:8ii8l3IzMKucpV8le3v5eXHRLFFjZUGdZsdiWljDVJo=
+github.com/anand-rajagopal-hub/datastructures/graphs/path v0.0.0-20201231160844-9336592a69d9 h1:OqTph6tVDui7ZdrLb89SLzycU8mfzKxZXPWeRbUPSU8=
+github.com/anand-rajagopal-hub/datastructures/graphs/path v0.0.0-20201231160844-9336592a69d9/go.mod h1:shXt4mN42+BAAVMy4yOhK1qxzsYEcUFXv3BInK2gxp8=

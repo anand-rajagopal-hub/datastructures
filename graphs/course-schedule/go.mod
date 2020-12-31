@@ -1,5 +1,5 @@
 module github.com/anand-rajagopal-hub/datastructures/graphs/course-schedule
 
-require github.com/anand-rajagopal-hub/datastructures/graphs/type v0.0.0-20201231153253-dba11b760751
-
 go 1.15
+
+require github.com/anand-rajagopal-hub/datastructures/graphs/path v0.0.0-20201231160844-9336592a69d9 // indirect

@@ -2,29 +2,33 @@ package path
 
 type Path struct {
 	visited map[int]int
-	paths map[int]bool
+	paths   map[int]bool
 }
 
-func NewPath(rootVertex int)  *Path {
+// NewPath makes a new path
+func NewPath(rootVertex int) *Path {
 	p := &Path{
-		visited: make(map[int]int)
+		visited: make(map[int]int),
 	}
 
-	p[rootVertex] = -1
+	p.visited[rootVertex] = -1
 	return p
 }
 
-func (p *Path) visit(vertex, from int) {
+// Visit the given vertex
+func (p *Path) Visit(vertex, from int) {
 	p.visited[vertex] = from
-	paths[from] = true
+	p.paths[from] = true
 }
 
-func (p *Path) visited(vertex) (bool, int) {
+// Visited returns if the vertex has been visited already
+func (p *Path) Visited(vertex int) (bool, int) {
 	from, ok := p.visited[vertex]
 	return ok, from
 }
 
-func (p *Path) cycleDetected(vertex int) bool  {
+// CycleDetected returns true if the vertex is the current path
+func (p *Path) CycleDetected(vertex int) bool {
 	_, ok := p.paths[vertex]
 	if ok {
 		return true

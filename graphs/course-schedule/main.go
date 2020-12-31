@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	_ "github.com/anand-rajagopal-hub/datastructures/graphs/type"
+	_ "github.com/anand-rajagopal-hub/datastructures/graphs/path"
 )
 
 func createAdjList(numCourses int, prerequisites [][]int) [][]int {
