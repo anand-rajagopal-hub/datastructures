@@ -6,12 +6,12 @@ type Path struct {
 }
 
 // NewPath makes a new path
-func NewPath(rootVertex int) *Path {
+func NewPath() *Path {
 	p := &Path{
 		visited: make(map[int]int),
+		paths:   make(map[int]bool),
 	}
 
-	p.visited[rootVertex] = -1
 	return p
 }
 
