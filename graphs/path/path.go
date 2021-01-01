@@ -2,14 +2,14 @@ package path
 
 type Path struct {
 	Visited map[int]int
-	Paths   map[int]bool
+	Paths   map[int]int
 }
 
 // NewPath makes a new path
 func NewPath() *Path {
 	p := &Path{
 		Visited: make(map[int]int),
-		Paths:   make(map[int]bool),
+		Paths:   make(map[int]int),
 	}
 
 	return p
@@ -18,7 +18,7 @@ func NewPath() *Path {
 // Visit the given vertex
 func (p *Path) Visit(vertex, from int) {
 	p.Visited[vertex] = from
-	p.Paths[from] = true
+	p.Paths[from] = vertex
 }
 
 // VisitedAlready returns if the vertex has been visited already
