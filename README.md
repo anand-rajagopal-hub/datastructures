@@ -22,6 +22,10 @@
 - [Successor](./bst/successor)
 - [Validate a binary tree](./bst/validate)
 
+## Graphs
+
+- [Course schedule](./graphs/course-schedule)
+
 ## Heap
 
 - [A simple max heap](./heap)
