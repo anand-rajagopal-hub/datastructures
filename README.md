@@ -25,6 +25,7 @@
 ## Graphs
 
 - [Course schedule](./graphs/course-schedule)
+- [Number of islands](./graphs/islands)
 
 ## Heap
 
