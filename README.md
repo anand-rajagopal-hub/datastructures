@@ -10,6 +10,8 @@
 - [Most common word](./arrays/most-common-word)
 - [Reorder log files](./arrays/reorder-log-files)
 - [Rain Water](./arrays/rain-water)
+- [First unique character](./arrays/unique)
+- [Number to words](./arrays/number-to-words)
 
 ## Linked Lists
 
