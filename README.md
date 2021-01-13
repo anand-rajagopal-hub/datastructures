@@ -28,6 +28,7 @@
 
 - [Course schedule](./graphs/course-schedule)
 - [Number of islands](./graphs/islands)
+- [Flood fill](./graphs/flood-fill)
 
 ## Heap
 
@@ -39,3 +40,7 @@
 
 - [Merge Sort](./sorting/merge-sort)
 - [Heap Sort](./sorting/heap-sort)
+
+## Dynamic Programming
+
+- [Longest palindromic substring](./dyanmic-programming/longest-palindromic-substring)
