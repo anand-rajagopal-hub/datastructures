@@ -45,4 +45,4 @@
 
 ## Dynamic Programming
 
-- [Longest palindromic substring](./dyanmic-programming/longest-palindromic-substring)
+- [Longest palindromic substring](./dynamic-programming/longest-palindromic-substring)
