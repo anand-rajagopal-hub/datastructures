@@ -35,11 +35,13 @@
 - [A simple max heap](./heap)
 
 ## Searching
-- [kth largest](./searching/kthlargest)
+- [kth largest using heap](./searching/kthlargest)
+- [kth largest using quick select](./searching/kthlargest-quickselect)
 ## Sorting
 
 - [Merge Sort](./sorting/merge-sort)
 - [Heap Sort](./sorting/heap-sort)
+- [Quick sort](./sorting/quicksort)
 
 ## Dynamic Programming
 
