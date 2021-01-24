@@ -2,27 +2,29 @@
 
 ## Arrays
 
-- [Two Sum](./arrays/two-sum)
-- [Longest Substring](./arrays/longest-substring)
-- [Roman Numeral](./arrays/roman-numeral)
-- [Container With Most Water](./arrays/container-most-water)
+- [Two sum](./arrays/two-sum)
+- [Longest substring](./arrays/longest-substring)
+- [Roman numeral](./arrays/roman-numeral)
+- [Container with most water](./arrays/container-most-water)
 - [Atoi](./arrays/atoi)
 - [Most common word](./arrays/most-common-word)
 - [Reorder log files](./arrays/reorder-log-files)
-- [Rain Water](./arrays/rain-water)
+- [Rain water](./arrays/rain-water)
 - [First unique character](./arrays/unique)
 - [Number to words](./arrays/number-to-words)
 
 ## Linked Lists
 
-- [Add Two Number](./linked-lists/add-two-numbers)
-- [Deep Copy](./linked-lists/deep-copy)
-- [Reverse Linked List](./linked-lists/reverse)
+- [Add two numbers](./linked-lists/add-two-numbers)
+- [Deep copy](./linked-lists/deep-copy)
+- [Reverse linked list](./linked-lists/reverse)
+- [Merge K sorted lists](./linked-lists/merge-ksorted-lists)
 
 ## Binary Search Trees
 
 - [Successor](./bst/successor)
 - [Validate a binary tree](./bst/validate)
+- [Level order traversal](./bst/level-order-traversal)
 
 ## Graphs
 
@@ -37,11 +39,12 @@
 ## Searching
 - [kth largest using heap](./searching/kthlargest)
 - [kth largest using quick select](./searching/kthlargest-quickselect)
+- [K frequent elements](./searching/kfrequent-elements)
 ## Sorting
 
-- [Merge Sort](./sorting/merge-sort)
-- [Heap Sort](./sorting/heap-sort)
-- [Quick sort](./sorting/quicksort)
+- [Mergesort](./sorting/merge-sort)
+- [Heapsort](./sorting/heap-sort)
+- [Quicksort](./sorting/quicksort)
 
 ## Dynamic Programming
 
