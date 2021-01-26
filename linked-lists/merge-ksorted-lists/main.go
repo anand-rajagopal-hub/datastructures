@@ -150,20 +150,6 @@ func mergeKLists(lists []*ListNode) *ListNode {
 			}
 		}
 	}
-
-	// for {
-	// 	e := h.remove()
-	// 	if e == nil {
-	// 		break
-	// 	}
-	// 	nn := &ListNode{
-	// 		Val:  h.remove().item,
-	// 		Next: nil,
-	// 	}
-	// 	current.Next = nn
-	// 	current = current.Next
-	// }
-	//remove rest of elements from the heap
 	return result
 }
 

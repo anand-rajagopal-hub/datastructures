@@ -49,3 +49,4 @@
 ## Dynamic Programming
 
 - [Longest palindromic substring](./dynamic-programming/longest-palindromic-substring)
+- [Coin change](./dynamic-programming/coin-change)
