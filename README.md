@@ -20,17 +20,20 @@
 - [Reverse linked list](./linked-lists/reverse)
 - [Merge K sorted lists](./linked-lists/merge-ksorted-lists)
 
+## Binary Tree
+- [Lowest common ancestor](./tree/binarytree/lca)
 ## Binary Search Trees
 
-- [Successor](./bst/successor)
-- [Validate a binary tree](./bst/validate)
-- [Level order traversal](./bst/level-order-traversal)
+- [Successor](./tree/bst/successor)
+- [Validate a binary tree](./tree/bst/validate)
+- [Level order traversal](./tree/bst/level-order-traversal)
 
 ## Graphs
 
 - [Course schedule](./graphs/course-schedule)
 - [Number of islands](./graphs/islands)
 - [Flood fill](./graphs/flood-fill)
+- [Cut off trees for golf course](./graph/gol-course)
 
 ## Heap
 
