@@ -33,7 +33,7 @@
 - [Course schedule](./graphs/course-schedule)
 - [Number of islands](./graphs/islands)
 - [Flood fill](./graphs/flood-fill)
-- [Cut off trees for golf course](./graphs/gol-course)
+- [Cut off trees for golf course](./graphs/golf-course)
 
 ## Heap
 
