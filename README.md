@@ -49,6 +49,7 @@
 - [Mergesort](./sorting/merge-sort)
 - [Heapsort](./sorting/heap-sort)
 - [Quicksort](./sorting/quicksort)
+- [Meeting Rooms](./sorting/meeting-rooms)
 
 ## Dynamic Programming
 
