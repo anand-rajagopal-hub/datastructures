@@ -43,6 +43,7 @@
 - [kth largest using heap](./searching/kthlargest)
 - [kth largest using quick select](./searching/kthlargest-quickselect)
 - [K frequent elements](./searching/kfrequent-elements)
+- [K closest points to origin](./searching/kclosest)
 ## Sorting
 
 - [Mergesort](./sorting/merge-sort)
