@@ -12,6 +12,9 @@
 - [Rain water](./arrays/rain-water)
 - [First unique character](./arrays/unique)
 - [Number to words](./arrays/number-to-words)
+- [Missing number](./arrays/missing-number)
+- [Rotate image](./arrays/rotate-image)
+- [Valid parentheses](./arrays/valid-parentheses)
 
 ## Linked Lists
 
