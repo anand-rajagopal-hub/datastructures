@@ -25,7 +25,7 @@
 
 ## Binary Tree
 - [Lowest common ancestor](./tree/binarytree/lca)
-- [Symmetric tree](./tree/symmetric)
+- [Symmetric tree](./tree/binarytree/symmetric)
 ## Binary Search Trees
 
 - [Successor](./tree/bst/successor)
