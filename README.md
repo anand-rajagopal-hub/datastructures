@@ -58,3 +58,8 @@
 
 - [Longest palindromic substring](./dynamic-programming/longest-palindromic-substring)
 - [Coin change](./dynamic-programming/coin-change)
+
+## Recursion
+
+- [Generate parentheses](./recursion/parentheses)
+- [Letter combinations of a phone number](./recursion/letter-combo)
